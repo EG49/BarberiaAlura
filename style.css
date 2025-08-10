@@ -1,0 +1,321 @@
+*:not(.productos){
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   
+}
+
+header{
+
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    width:100%;
+
+}
+.cabecera{
+   width: 100%;
+}
+
+
+.caja{
+   width: 940px;
+   position: relative;
+   margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li{
+   display: inline;
+   margin: 0 0 0 15px;
+}
+
+nav a{
+   text-transform: uppercase;
+   color: black;
+   font-weight: bold;
+   font-size: 22px;
+   text-decoration: none;
+
+}
+
+nav a:hover{
+   color: #c78c19;
+   text-decoration: underline;
+
+}
+
+.productos{
+   width: 940px;  
+   margin: 0 auto;
+   padding: 50px;
+}
+.productos h2{
+   font-size: 30px;
+   font-weight: bold;
+
+}
+
+ .productos li{
+   display: inline-block;
+   text-align: center;
+   width: 30%;
+   vertical-align: top;
+   margin: 0 1.15%;
+   padding: 30px 20px;
+   box-sizing: border-box;
+   border: 2px solid black;
+   border-radius: 10px 45px 10px 45px;
+ }
+ .productos li:hover{
+   border-color: #c78c19;
+   color: #c78c19;
+
+ }
+
+ .productos li:hover h2{
+   font-size: 32px;
+
+ }
+ .productos li:active{
+   border-color: #088c19;
+   color: #088c19;
+ }
+
+ .producto-descripcion{
+    font-size: 18px;
+
+ }
+  .producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px ;
+
+  }
+
+  footer{
+   text-align: center;
+   width:100%;
+   
+   padding: 40px;
+   background: url("imagenes/bg.jpg");
+
+  }
+
+  .copyright{
+   color: #FFFFFF;
+   font-size: 13px;
+   margin: 20px;
+  }
+  
+ 
+  form{
+   margin: 40px 0;
+   width: 940px;
+      margin: 0 auto;
+      padding: 40px;;
+  }
+
+  form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    
+
+  }
+
+  .input-padron{
+   display: block;
+   font-size: 20px;
+   margin: 0 0 20px;
+   padding: 10px 25px;
+   width: 70%;
+   
+
+  }
+
+  .checkbox{
+   margin: 20px 0;
+  }
+   
+  .enviar{
+   width: 40%;
+   padding: 15px 0;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   background-color: orange;
+   border: none;
+   border-radius: 10px 10px;
+   transition: 1s all;
+   cursor: pointer;
+
+  }
+  .enviar:hover{
+   
+   background-color: darkorange;
+   transform: scale(1.2);
+  }
+  table{
+   margin: 40px auto;
+   width: 120px; 
+   padding: 40px 40px auto;
+  }
+  thead{
+   background: grey;
+   color: white;
+   font-weight: bold;
+   }
+   td, th{
+      border: 1px solid #000000;
+      padding: 8px 15px;
+   }
+   /*CSS PARA HOME*/
+   .banner{
+      width: 100%;
+      
+
+   }
+   .tituloPrincipal{
+  
+   text-align: center;
+   
+   font-size: 2em;
+   color: #000000;
+   
+   padding: 30px;
+   width: 940px;
+  
+   margin: 0 auto 1em;
+   clear: left;
+
+
+   }
+
+  
+   .tituloPrincipal:first-letter{
+      font-weight:bold;
+   }
+   .principal{
+      background: #fefefe;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px;
+      
+   }
+
+   .principal p{
+      margin: 0 0 1em;
+      
+   }
+   .principal strong{
+      font-weight: bold;
+
+   }
+   .principal strong{
+      font-style: italic;
+
+   }
+   .utensilios{
+      width: 120px;
+      float: left;
+      margin: 0 20px 20px 0;
+   }
+   .mapa{
+      padding: 3em 0 ;
+      background: linear-gradient(#fefefe, #88888888);
+      width:100%;
+      
+   }
+  
+   .mapa p{
+      padding: 0 0 10px;
+      text-align: center;
+      
+   }
+   .contenidoMapa{
+      width: 940px;
+      margin: 0 auto;
+      padding: 40px;
+   }
+   .diferenciales{
+      
+      background: #88888888;
+      width: 100%;  
+      margin: 0 auto;
+      padding: 40px;
+   }
+
+   .items:before{
+     content:"★ ";
+
+   }
+
+
+   
+
+   .contenidoDiferenciales{
+      width: 640px;
+      margin: 0 auto;
+   }
+   .listaDiferenciales{
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+   }
+   .items:first-child{
+      font-weight: bold;
+   }
+   .items{
+      margin: 0 0 10px 0;
+      line-height: 1.5;
+   }
+   .imagenDiferenciales{
+      width: 60%;
+      box-shadow:10px 10px 30px 15px black;
+   }
+   .imagenDiferenciales:hover{
+      opacity: 30%;
+      transition: 400ms;
+   }
+   
+   .video{
+      width: 560px;
+      margin: 3em auto;
+   }
+
+   @media screen and (max-width:480px){
+      h1{
+         text-align: center;
+      }
+      nav{
+         position: static;
+      }
+      .caja, .principal, .contenidoMapa, .contenidoDiferenciales, .video, .tituloPrincipal{
+         width: auto;
+      }
+      .listaDiferenciales, .imagenDiferenciales{
+         width: 100%;
+      }
+   }
+   @media screen and (max-width:1000px){
+      h1{
+         text-align: center;
+      }
+      nav{
+         position: static;
+      }
+      .caja, .principal, .contenidoMapa, .contenidoDiferenciales, .video, .tituloPrincipal{
+         width: auto;
+      }
+      .listaDiferenciales, .imagenDiferenciales{
+         width: 100%;
+      }
+   }
+
