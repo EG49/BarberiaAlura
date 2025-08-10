@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre nosotros | Green Beauty</title>
+  <style>
+    :root{
+      --green:#1e7a42;
+      --green-dark:#145532;
+      --green-soft:#eaf5ef;
+      --text:#2b2b2b;
+      --muted:#5c6b66;
+      --ring:#dfe7e2;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:#f6f7f7;
+      line-height:1.6;
+    }
+    .container{width:min(1100px, 92%);margin-inline:auto}
+    /* Header */
+    .header{background:var(--white);border-bottom:1px solid var(--ring)}
+    .header__row{display:flex;align-items:center;gap:1rem;padding:10px 0}
+    .logo{
+      width:46px;height:46px; display:grid; place-items:center;
+      border-radius:999px; background:var(--green);
+      color:#e8ffee;font-weight:800; font-size:22px; letter-spacing:.5px;
+      border:3px solid var(--green-dark);
+    }
+    .brand{font-weight:800}
+    .navbar{margin-left:auto;display:flex;gap:.5rem;align-items:center}
+    .nav__link{
+      text-decoration:none; color:var(--white); font-weight:600;
+      background:var(--green); padding:.55rem .9rem; border-radius:999px;
+      box-shadow:0 6px 14px rgba(20,85,50,.18);
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .nav__link--active{background:var(--green-dark)}
+    .nav-toggle{
+      display:none;background:var(--green);color:#fff;border:none;
+      padding:.45rem .7rem;border-radius:.6rem
+    }
+
+    /* Hero / título */
+    .hero{
+      background:var(--white);
+      border-bottom:1px solid var(--ring);
+    }
+    .hero__inner{padding:36px 0;text-align:center}
+    .hero h1{font-size:38px;margin:0 0 .35rem}
+    .hero p{color:var(--muted);max-width:780px;margin:0 auto}
+
+    /* Secciones */
+    .section{background:var(--white); padding:36px 0}
+    .section + .section{border-top:1px solid var(--ring)}
+    .section__title{
+      color:var(--green-dark); text-transform:uppercase; letter-spacing:1px;
+      font-weight:900; margin:0 0 18px; text-align:center;
+    }
+    .grid-2{
+      display:grid; gap:18px;
+      grid-template-columns: 1.1fr 1fr;
+      align-items:center;
+    }
+    .grid-2--reverse{ grid-template-columns:1fr 1.1fr; }
+    .grid-2 img{
+      width:100%; height:260px; object-fit:cover; border-radius:.6rem;
+      border:1px solid var(--ring);
+    }
+    .lead{color:var(--muted)}
+
+    /* Cinta verde central */
+    .ribbon{
+      background:linear-gradient(180deg, var(--green), var(--green-dark));
+      color:#eafff1; text-align:center; padding:18px 0; font-weight:800;
+      letter-spacing:.6px;
+    }
+
+    /* Footer */
+    .footer{background:var(--white);border-top:1px solid var(--ring);padding:22px 0}
+    .footer__grid{display:grid;gap:18px;grid-template-columns:2fr 1fr}
+    .footer h4{margin:.2rem 0}
+    .social{display:flex;gap:.5rem}
+    .social a{
+      display:inline-grid; place-items:center; width:34px; height:34px;
+      border-radius:999px; background:var(--green); color:#fff; text-decoration:none;
+      font-weight:800;
+    }
+    .small{color:var(--muted);font-size:.95rem}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .grid-2, .grid-2--reverse{grid-template-columns:1fr}
+    }
+    @media (max-width: 640px){
+      .navbar{display:none}
+      .navbar.nav--open{
+        display:flex; position:absolute; right:4%; top:64px; flex-direction:column;
+        background:#fff; border:1px solid var(--ring); border-radius:.7rem;
+        padding:.4rem; gap:.35rem; z-index:20;
+      }
+      .nav-toggle{display:inline-block;margin-left:auto}
+      .hero h1{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__row">
+      <div class="logo" aria-label="Logo">G</div>
+      <strong class="brand">Green Beauty</strong>
+
+      <nav id="main-nav" class="navbar" aria-label="Principal">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link nav__link--active" href="nosotros.html">Nosotros</a>
+        <a class="nav__link" href="producto.html">Productos</a>
+        <a class="nav__link" href="contacto.html">Contáctanos</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Sobre nosotros -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1>Sobre nosotros</h1>
+      <p class="lead">Green Beauty ha dejado huella en la vida de mujeres y hombres de todo el mundo con más de un siglo de experiencia, lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </section>
+
+  <!-- Nuestra historia -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Nuestra historia</h2>
+      <div class="grid-2">
+        <img src="https://picsum.photos/seed/historia/900/600" alt="Foto histórica de la marca">
+        <div>
+          <p>La marca fue fundada en Francia en 1904 cuando Alfred A. lanzó su primera fórmula para el cuidado del cabello a base de plantas. Durante décadas, Green Beauty se expandió en el mercado de cosméticos y consolidó su reputación como experta en belleza natural con soluciones basadas en la naturaleza para combatir la contaminación, el acné, los rayos UV y la fatiga. Lorem ipsum dolor sit amet consectetur adipisicing elit, aspernatur perspiciatis illo.</p>
+          <p>Hoy seguimos investigando ingredientes de origen responsable y procesos de producción más limpios, manteniendo la calidad que nos caracteriza. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compromiso -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Nuestro compromiso con la Green Beauty</h2>
+      <div class="grid-2 grid-2--reverse">
+        <div>
+          <p>Apoyamos la belleza natural y creemos que todas las personas deben tener la posibilidad de elegir una mejor versión de sí mismas con productos elaborados con ingredientes rastreables, de origen responsable y fórmulas más limpias. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p>Trabajamos para reducir nuestro impacto en la naturaleza apostando por una producción cada vez más sostenible y respetuosa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, amet.</p>
+        </div>
+        <img src="https://picsum.photos/seed/green/900/600" alt="Ilustración de compromiso verde">
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinta -->
+  <div class="ribbon">GREEN BEAUTY — PARA TODOS NOSOTROS</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h4>Atención al consumidor</h4>
+        <p class="small">
+          Green Beauty Inc. — 123 Rue Royale, 75008 París, Francia<br>
+          +33 (0)1 23 45 67 89 · soporte@greenbeauty.example
+        </p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social" aria-label="Redes sociales">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="X / Twitter">x</a>
+          <a href="#" title="Instagram">∞</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('navToggle');
+    const nav = document.getElementById('main-nav');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav--open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>
